@@ -1,0 +1,243 @@
+.introduce {
+    padding: 30vw 0 10vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.introduce>p {
+    font-size: 1.5vw;
+    width: 100%;
+    line-height: 2.5;
+    border-bottom: 1px solid #868686;
+    color: #868686;
+}
+
+.introduce_top {
+    width: 100%;
+    padding-right: 10px;
+    white-space: pre-line;
+    padding-bottom: 10vh;
+    padding-top: 1vw;
+}
+
+.introduce_top p {
+    line-height: 1.3;
+    font-size: 1vw;
+}
+
+.introduce_under {
+    width: 100%;
+    white-space: pre-line;
+}
+
+.introduce_under h3 {
+    font-size: 2vw;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.introduce_under p {
+    font-size: 1vw;
+}
+
+.experience {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.experience h3 {
+    font-size: 2vw;
+}
+
+.experience_left {
+    font-size: 1.2vw;
+    width: 50%;
+    padding-right: 10px;
+    white-space: pre-line;
+}
+
+.experience_right {
+    font-size: 1.2vw;
+    width: 48%;
+    white-space: pre-line;
+}
+
+.introduce_img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3vh;
+}
+
+.introduce_img div {
+    width: 32%;
+}
+
+.skill {
+    padding-top: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.skill p {
+    padding-bottom: 2vw;
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+.skill_box {
+    padding-top: 2vw;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill_box>div {
+    padding: 1vw 6vw;
+    margin-bottom: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E8EAF1;
+    width: 19.5%;
+    min-height: 50px;
+    transition: all 0.6s;
+}
+
+.skill_box>div:hover {
+    background-color: #d2d5de;
+}
+
+.skill_box>div>img {
+    max-width: 100%;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+}
+
+@media(max-width: 1200px) {
+    .introduce_top p {
+        font-size: 1.4vw;
+    }
+
+    .introduce_under p {
+        font-size: 1.2vw;
+    }
+}
+
+@media(max-width: 800px) {
+
+    .arrow img {
+        padding: 90px 0 40px;
+    }
+
+    .introduce {
+        padding-top: 20vw;
+        padding-bottom: 10vw;
+    }
+
+    .introduce_top {
+        width: 100%;
+    }
+
+    .introduce_top p {
+        font-size: 1.8vw;
+        line-height: 1.6;
+    }
+
+    .introduce_img div {
+        width: 49%;
+    }
+
+    .intro_imgright {
+        display: none;
+    }
+
+    .introduce_under p {
+        line-height: 1.6;
+        font-size: 1.8vw;
+    }
+
+    .skill_box>div {
+        width: 24.5%;
+    }
+
+
+}
+
+@media(max-width: 600px) {
+    .skill_box>div {
+        min-height: 25px;
+        width: 33%;
+    }
+
+    .skill_box>div>img {
+        max-width: 60%;
+    }
+}
+
+@media(max-width: 450px) {
+    .introduce {
+        padding: 10vw 0 25vw;
+    }
+
+    .introduce p {
+        font-size: 4vw;
+    }
+
+    .introduce_top {
+        width: 100%;
+        padding-bottom: 3vw;
+    }
+
+    .introduce_top p {
+        font-size: 3.5vw;
+    }
+
+    .introduce_img {
+        padding-bottom: 0;
+    }
+
+    .introduce_img>div {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .intro_imgleft {
+        display: none;
+    }
+
+    .introduce_under h3 {
+        font-size: 4vw;
+    }
+
+    .introduce_under p {
+        font-size: 3.5vw;
+    }
+
+    .experience_left {
+        width: 100%;
+    }
+
+    .experience_right {
+        width: 100%;
+    }
+
+    .skill p {
+        font-size: 3.5vw;
+    }
+
+    .skill_box>div {
+        min-height: 20px;
+        width: 49.5%;
+    }
+
+    .skill_box>div>img {
+        max-width: 50%;
+    }
+}

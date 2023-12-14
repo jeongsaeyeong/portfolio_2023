@@ -1,0 +1,82 @@
+#section01 {
+    font-family: 'Partizeno';
+    margin: 0 auto;
+}
+
+#intro_text_box {
+    z-index: 1;
+    font-size: 10.5vw;
+    position: relative;
+    margin: 0 auto;
+}
+
+#intro_text_box p:nth-child(2) .word:nth-child(3) {
+    margin-left: 24vw;
+}
+
+#intro_text_box p:nth-child(3) .word:nth-child(2) {
+    margin-left: 20vw;
+}
+
+#intro_text_box p:nth-child(4) .word:nth-child(3) {
+    margin-left: 7vw;
+}
+
+.intro_img_01 {
+    background-image: url("https://source.unsplash.com/random/?bluesky");
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 28%;
+    left: 37.5%;
+    width: 26vw;
+    height: 8vw;
+    border-radius: 100px;
+}
+
+.intro_img_02 {
+    background-image: url("https://source.unsplash.com/random/?space");
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 53%;
+    left: 25%;
+    width: 22vw;
+    height: 8vw;
+    border-radius: 100px;
+}
+
+.intro_img_03 {
+    background-image: url("https://source.unsplash.com/random/?pinksky");
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 78%;
+    left: 46%;
+    width: 9vw;
+    height: 8vw;
+    border-radius: 100px;
+}
+
+
+@media(max-width: 450px) {
+    #intro_text_box {
+        font-size: 9vmax;
+    }
+
+    .imtroimg_box {
+        display: none;
+    }
+
+    #intro_text_box p:nth-child(2) .word:nth-child(3) {
+        margin-left: 0;
+    }
+
+    #intro_text_box p:nth-child(3) .word:nth-child(2) {
+        margin-left: 0;
+    }
+
+    #intro_text_box p:nth-child(4) .word:nth-child(3) {
+        margin-left: 0;
+    }
+}

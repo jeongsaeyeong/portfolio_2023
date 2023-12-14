@@ -1,0 +1,164 @@
+#footer {
+    padding: 0 50px;
+    position: relative;
+}
+
+#footer>p {
+    font-size: 2vw;
+    width: 100%;
+    line-height: 2.5;
+    border-bottom: 1px solid #868686;
+    color: #868686;
+}
+
+.footer_text {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer_text>div {
+    padding: 30vh 0;
+}
+
+.footer_text div h2 {
+    font-family: 'Partizeno';
+    white-space: pre-line;
+    width: 100%;
+    font-size: 4.5vw;
+}
+
+.footer_text div p {
+    font-size: 1.2vw;
+    white-space: pre-line;
+    padding-top: 5vw;
+}
+
+
+.connection {
+    width: 100%;
+    height: 48vw;
+    padding-bottom: 3vw;
+}
+
+.connection_box {
+    padding: 4vw;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: 1px solid #b7b7b7;
+    background-color: #F2F2F2;
+}
+
+.connect_top {
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+.connect_middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 80%;
+}
+
+.connect_middle div h2 {
+    font-size: 5vw;
+    font-family: 'Partizeno';
+    transition: all 0.4s;
+}
+
+.connect_middle div h2:hover {
+    cursor: pointer;
+    color: #f3b239;
+}
+
+.connect_middle div p {
+    font-size: 1vw;
+    font-weight: 100;
+}
+
+.connect_down {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5vw;
+    font-weight: 100;
+}
+
+.connect_down ul {
+    display: flex;
+}
+
+.connect_down ul li {
+    margin-right: 10px;
+}
+
+@media (max-width: 800px) {
+    #footer {
+        padding: 0 30px;
+    }
+
+    .footer_text>div {
+        padding: 15vh 0;
+    }
+
+    .footer_text div p {
+        font-size: 2vw;
+
+    }
+}
+
+@media (max-width: 450px) {
+    #footer {
+        padding-bottom: 50px;
+    }
+
+    #footer p {
+        font-size: 3vw;
+    }
+
+    .footer_text>div {
+        padding: 50vw 0;
+    }
+
+    .connection_box {
+        height: 120%;
+    }
+
+    .footer_text div p {
+        text-align: right;
+        font-size: 3vw;
+    }
+
+    .footer_text>div>h2 {
+        text-align: left;
+        font-size: 9vw;
+        padding-bottom: 10vw;
+    }
+
+    .connection {
+        height: 60vh;
+        margin-bottom: 50px;
+    }
+
+    .connect_top {
+        font-size: 3vw;
+    }
+
+    .connect_middle div h2 {
+        font-size: 8vw;
+    }
+
+    .connect_down {
+        padding-top: 10vw;
+        font-size: 3vw;
+    }
+}

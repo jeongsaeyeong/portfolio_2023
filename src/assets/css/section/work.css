@@ -7,7 +7,7 @@
 }
 
 .work>p {
-    font-size: 16px;
+    font-size: 25px;
     width: 100%;
     line-height: 2.5;
     border-bottom: 1px solid #868686;
@@ -170,13 +170,8 @@
     }
 }
 
-@media(max-width:600px) {
-    .work_Sorce {
-        bottom: -30%;
-    }
-}
 
-@media(max-width: 450px) {
+@media(max-width: 600px) {
     .work {
         padding-bottom: 20vw;
     }
@@ -196,7 +191,7 @@
     .work_Sorce {
         font-size: 25vw;
         left: 100%;
-        bottom: 27%;
+        bottom: 18%;
         transform: translate(-90%, -33%);
     }
 
@@ -227,6 +222,45 @@
         border-bottom: 1px solid #d1d1d1;
         line-height: 2;
     }
+
+    .work_text h2 {
+        font-size: 4vw;
+    }
+
+    .work_text p {
+        font-size: 2.5vw;
+        padding-top: 5px;
+    }
+
+    .work_button {
+        padding-top: 2vw;
+    }
+
+    .work_button ul {
+        justify-content: space-between;
+    }
+
+    .work_button ul li {
+        text-align: center;
+        width: 33.33%;
+        font-size: 2.5vw;
+    }
+
+    .work_desc {
+        text-align: left;
+        font-size: 2.5vw;
+    }
+}
+
+@media(max-width: 450px) {
+
+    .work_Sorce {
+        font-size: 25vw;
+        left: 100%;
+        bottom: 27%;
+        transform: translate(-90%, -33%);
+    }
+
 
     .work_text h2 {
         font-size: 4.5vw;

@@ -147,7 +147,7 @@
                             <h2>Silence Youtube</h2>
                             <p>뉴에이지 음악 사이트</p>
                         </div>
-                        <div class="work_button">
+                        <div class="work_button button_left">
                             <ul>
                                 <li><a href="#">VIEW</a></li>
                                 <li><a href="#">GITHUB</a></li>
@@ -201,7 +201,7 @@
                             <h2>Silence Youtube</h2>
                             <p>뉴에이지 음악 사이트</p>
                         </div>
-                        <div class="work_button">
+                        <div class="work_button button_left">
                             <ul>
                                 <li><a href="#">VIEW</a></li>
                                 <li><a href="#">GITHUB</a></li>
@@ -282,7 +282,7 @@
                             <h2>Silence Youtube</h2>
                             <p>뉴에이지 음악 사이트</p>
                         </div>
-                        <div class="work_button">
+                        <div class="work_button button_left">
                             <ul>
                                 <li><a href="#">VIEW</a></li>
                                 <li><a href="#">GITHUB</a></li>
@@ -614,8 +614,9 @@
             });
         });
 
-        const strengthLines = gsap.utils.toArray('#strength p');
+        const strengthLines = gsap.utils.toArray('#strength');
         const experienceLines = gsap.utils.toArray('.experience div');
+        const skill = gsap.utils.toArray('.skill');
 
         strengthLines.forEach(line => {
             gsap.set(line, { opacity: 0, y: '100%' });
@@ -642,7 +643,23 @@
                     gsap.to(line, {
                         opacity: 1,
                         y: 0,
-                        duration: 1,
+                        duration: 1.2,
+                        ease: 'power2.out'
+                    });
+                }
+            });
+        });
+
+        skill.forEach(line => {
+            gsap.set(line, { opacity: 0, y: '100%' });
+            ScrollTrigger.create({
+                trigger: '.experience',
+                start: 'top center',
+                onEnter: () => {
+                    gsap.to(line, {
+                        opacity: 1,
+                        y: 0,
+                        duration: 1.5,
                         ease: 'power2.out'
                     });
                 }
@@ -654,7 +671,7 @@
         logoContainers.forEach(container => {
             container.addEventListener('mouseenter', () => {
                 gsap.to(container, {
-                    y: -20, // 위로 20px 이동 (원하는 값으로 조절 가능)
+                    y: -40, // 위로 20px 이동 (원하는 값으로 조절 가능)
                     duration: 0.1,
                     ease: 'power2.out'
                 });
@@ -797,9 +814,48 @@
             });
         });
 
+        const workbuttonleft = document.querySelectorAll('.button_left ul li');
+        const workbuttonright = document.querySelectorAll('.button_right ul li');
+
+        workbuttonleft.forEach(container => {
+            container.addEventListener('mouseenter', () => {
+                gsap.to(container, {
+                    x: 40, // 위로 20px 이동 (원하는 값으로 조절 가능)
+                    duration: 0.1,
+                    ease: 'power2.out'
+                });
+            });
+
+            container.addEventListener('mouseleave', () => {
+                gsap.to(container, {
+                    x: 0,
+                    duration: 0.3,
+                    ease: 'power2.out'
+                });
+            });
+        });
+
+        workbuttonright.forEach(container => {
+            container.addEventListener('mouseenter', () => {
+                gsap.to(container, {
+                    x: -40, // 위로 20px 이동 (원하는 값으로 조절 가능)
+                    duration: 0.1,
+                    ease: 'power2.out'
+                });
+            });
+
+            container.addEventListener('mouseleave', () => {
+                gsap.to(container, {
+                    x: 0,
+                    duration: 0.3,
+                    ease: 'power2.out'
+                });
+            });
+        });
+
         // footer 
 
-        gsap.utils.toArray('.footer_text div *').forEach((element, index) => {
+        gsap.utils.toArray('.footer_text div h2').forEach((element, index) => {
             gsap.set(element, { y: '100%', opacity: 0 });
 
             ScrollTrigger.create({
@@ -810,6 +866,23 @@
                         y: '0%',
                         opacity: 1,
                         duration: 1,
+                        ease: 'power2.out'
+                    });
+                }
+            });
+        });
+
+        gsap.utils.toArray('.footer_text div p').forEach((element, index) => {
+            gsap.set(element, { y: '150%', opacity: 0 });
+
+            ScrollTrigger.create({
+                trigger: element,
+                start: 'top bottom',
+                onEnter: () => {
+                    gsap.to(element, {
+                        y: '0%',
+                        opacity: 1,
+                        duration: 2,
                         ease: 'power2.out'
                     });
                 }

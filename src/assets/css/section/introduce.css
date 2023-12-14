@@ -5,7 +5,7 @@
 }
 
 .introduce>p {
-    font-size: 1.5vw;
+    font-size: 22px;
     width: 100%;
     line-height: 2.5;
     border-bottom: 1px solid #868686;
@@ -22,7 +22,7 @@
 
 .introduce_top p {
     line-height: 1.3;
-    font-size: 1vw;
+    font-size: 16px;
 }
 
 .introduce_under {
@@ -31,13 +31,13 @@
 }
 
 .introduce_under h3 {
-    font-size: 2vw;
+    font-size: 25px;
     padding-bottom: 10px;
     font-weight: 700;
 }
 
 .introduce_under p {
-    font-size: 1vw;
+    font-size: 15px;
 }
 
 .experience {
@@ -48,18 +48,18 @@
 }
 
 .experience h3 {
-    font-size: 2vw;
+    font-size: 25px;
 }
 
 .experience_left {
-    font-size: 1.2vw;
+    font-size: 20px;
     width: 50%;
     padding-right: 10px;
     white-space: pre-line;
 }
 
 .experience_right {
-    font-size: 1.2vw;
+    font-size: 20px;
     width: 48%;
     white-space: pre-line;
 }
@@ -76,7 +76,7 @@
 }
 
 .skill {
-    padding-top: 2vw;
+    padding-top: 25px;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -122,11 +122,11 @@
 
 @media(max-width: 1200px) {
     .introduce_top p {
-        font-size: 1.4vw;
+        font-size: 15px;
     }
 
     .introduce_under p {
-        font-size: 1.2vw;
+        font-size: 15px;
     }
 }
 
@@ -146,7 +146,7 @@
     }
 
     .introduce_top p {
-        font-size: 1.8vw;
+        font-size: 12px;
         line-height: 1.6;
     }
 
@@ -160,7 +160,7 @@
 
     .introduce_under p {
         line-height: 1.6;
-        font-size: 1.8vw;
+        font-size: 12px;
     }
 
     .skill_box>div {

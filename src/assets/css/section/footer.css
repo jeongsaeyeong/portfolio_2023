@@ -1,6 +1,7 @@
 #footer {
-    padding: 0 50px;
+    padding: 50px;
     position: relative;
+    margin-bottom: 60px;
 }
 
 #footer>p {
@@ -27,7 +28,7 @@
     font-family: 'Partizeno';
     white-space: pre-line;
     width: 100%;
-    font-size: 50px;
+    font-size: 60px;
 }
 
 .footer_text div p {
@@ -36,69 +37,79 @@
     padding-top: 5vw;
 }
 
-
 .connection {
+    margin-top: 200px;
     width: 100%;
-    height: 48vw;
-    padding-bottom: 3vw;
+    height: 700px;
+}
+
+.connection>p {
+    font-family: 'Partizeno';
+    font-size: 100px;
+    line-height: 0.61;
 }
 
 .connection_box {
+    display: flex;
+    background-color: #F2F2F2;
     padding: 4vw;
     width: 100%;
     height: 100%;
     border-radius: 20px;
     border: 1px solid #b7b7b7;
-    background-color: #F2F2F2;
+    position: relative;
 }
 
-.connect_top {
-    display: flex;
-    justify-content: space-between;
-    height: 10%;
-    font-size: 1.5vw;
-    font-weight: 100;
+.side {
+    width: 20%;
 }
 
-.connect_middle {
+.chat_box {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     flex-wrap: wrap;
-    height: 80%;
+    width: 60%;
 }
 
-.connect_middle div h2 {
-    font-size: 5vw;
-    font-family: 'Partizeno';
-    transition: all 0.4s;
+.chat_box .show {
+    height: 85%;
+    width: 100%;
+    background-color: #e3e3e3;
+    padding: 20px;
 }
 
-.connect_middle div h2:hover {
-    cursor: pointer;
-    color: #f3b239;
+.chat_box .show p {
+    font-family: 'NanumSquareNeo';
+    border-radius: 10px 10px 10px 0px;
+    padding: 15px 20px;
+    width: 45%;
+    background-color: #aaaaaa;
 }
 
-.connect_middle div p {
-    font-size: 1vw;
-    font-weight: 100;
-}
-
-.connect_down {
-    margin-top: auto;
+.chat_box .input {
+    margin-top: 7px;
     display: flex;
+    width: 100%;
     justify-content: space-between;
-    font-size: 1.5vw;
-    font-weight: 100;
 }
 
-.connect_down ul {
-    display: flex;
+.chat_box .input input {
+    outline: none;
+    padding: 20px;
+    width: 79%;
+    height: 80px;
+    border: 1px solid #b7b7b7;
+    margin-bottom: 5px;
 }
 
-.connect_down ul li {
-    margin-right: 10px;
+.chat_box .input button {
+    font-size: 20px;
+    font-family: 'Poiret One';
+    height: 80px;
+    width: 20%;
+    padding: 5px;
+    border: 0;
+    color: #fff;
+    background-color: #868686;
 }
 
 @media (max-width: 1000px) {
@@ -139,36 +150,4 @@
         padding: 50vw 0;
     }
 
-    .connection_box {
-        height: 120%;
-    }
-
-    .footer_text div p {
-        text-align: right;
-        font-size: 12px;
-    }
-
-    .footer_text>div>h2 {
-        text-align: left;
-        font-size: 9vw;
-        padding-bottom: 10vw;
-    }
-
-    .connection {
-        height: 60vh;
-        margin-bottom: 50px;
-    }
-
-    .connect_top {
-        font-size: 3vw;
-    }
-
-    .connect_middle div h2 {
-        font-size: 8vw;
-    }
-
-    .connect_down {
-        padding-top: 10vw;
-        font-size: 3vw;
-    }
 }

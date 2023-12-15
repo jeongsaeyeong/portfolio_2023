@@ -268,5 +268,6 @@ select {
 }
 
 #main {
+    overflow: hidden;
     padding: 5%;
 }

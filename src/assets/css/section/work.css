@@ -23,8 +23,9 @@
 }
 
 .work_Sorce {
+    z-index: 19000;
     position: absolute;
-    left: 30%;
+    left: 25%;
     bottom: -20%;
     transform: translate(-30%, -20%);
     font-size: 15vw;
@@ -34,7 +35,6 @@
 .work_img {
     width: 50%;
 }
-
 
 .work_text {
     padding: 20px 0;
@@ -110,7 +110,7 @@
 }
 
 .sorce_right {
-    left: 60%;
+    left: 50%;
 }
 
 .mobile {
@@ -260,7 +260,6 @@
         bottom: 27%;
         transform: translate(-90%, -33%);
     }
-
 
     .work_text h2 {
         font-size: 4.5vw;

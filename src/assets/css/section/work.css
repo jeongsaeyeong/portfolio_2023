@@ -190,9 +190,9 @@
 
     .work_Sorce {
         font-size: 25vw;
-        left: 100%;
+        left: 0%;
         bottom: 18%;
-        transform: translate(-90%, -33%);
+        transform: translate(-0%, -33%);
     }
 
     .work_box {
@@ -234,6 +234,10 @@
 
     .work_button {
         padding-top: 2vw;
+    }
+
+    .sorce_right {
+        left: 0;
     }
 
     .work_button ul {

@@ -36,6 +36,11 @@
     width: 50%;
 }
 
+.work_img img {
+    border-radius: 60px;
+
+}
+
 .work_text {
     padding: 20px 0;
 }
@@ -260,7 +265,7 @@
 
     .work_Sorce {
         font-size: 25vw;
-        left: 100%;
+        left: 0%;
         bottom: 27%;
         transform: translate(-90%, -33%);
     }

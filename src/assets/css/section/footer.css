@@ -133,8 +133,24 @@
 
     .footer_text div p {
         font-size: 14px;
-
     }
+
+    .side {
+        display: none;
+    }
+
+    .chat_box {
+        width: 100%;
+    }
+
+    .connection>p {
+        font-size: 15vw;
+    }
+
+    .chat_box .show p {
+        width: 80%;
+    }
+
 }
 
 @media (max-width: 450px) {
@@ -142,12 +158,24 @@
         padding-bottom: 50px;
     }
 
-    #footer p {
+    #footer>p {
         font-size: 3vw;
     }
 
     .footer_text>div {
         padding: 50vw 0;
+    }
+
+    .chat_box .show p {
+        width: 100%;
+    }
+
+    .chat_box .input input {
+        height: 50px;
+    }
+
+    .chat_box .input button {
+        height: 50px;
     }
 
 }
